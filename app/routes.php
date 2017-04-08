@@ -1,5 +1,3 @@
 <?php
 
-$app->get('/', function () {
-    return "Hello";
-});
+$app->get('/', '\App\Controllers\WelcomeController::index');
