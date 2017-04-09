@@ -26,6 +26,11 @@ class Menu
     protected $link;
 
     /**
+     * @Column(name="is_branding", type="boolean")
+     */
+    protected $isBranding = false;
+
+    /**
      * Gets the value of id.
      *
      * @return mixed
@@ -93,6 +98,30 @@ class Menu
     public function setLink($link)
     {
         $this->link = $link;
+
+        return $this;
+    }
+
+    /**
+     * Gets the value of isBranding.
+     *
+     * @return mixed
+     */
+    public function getIsBranding()
+    {
+        return $this->isBranding;
+    }
+
+    /**
+     * Sets the value of isBranding.
+     *
+     * @param mixed $isBranding the is branding
+     *
+     * @return self
+     */
+    public function setIsBranding($isBranding)
+    {
+        $this->isBranding = $isBranding;
 
         return $this;
     }

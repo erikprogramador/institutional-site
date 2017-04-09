@@ -10,7 +10,7 @@ class WelcomeController
 {
     public function index(Application $app)
     {
-        $menus = $app['orm.em']->getRepository(Menu::class)->findBy([]);
+        $menus = $app['MenuRepository']->findAll();
         return $app['twig']->render('welcome.twig', compact('menus'));
     }
 }

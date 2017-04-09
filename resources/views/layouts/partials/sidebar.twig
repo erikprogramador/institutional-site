@@ -3,7 +3,9 @@
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         {% for menu in menus %}
-            <li><a href="{{ menu.link }}" onclick=$("#menu-close").click();>{{ menu.title }}</a></li>
+            <li class="{{ menu.isBranding ? 'sidebar-brand' : '' }}">
+                <a href="{{ menu.link }}" onclick=$("#menu-close").click();>{{ menu.title }}</a>
+            </li>
         {% endfor %}
     </ul>
 </nav>
