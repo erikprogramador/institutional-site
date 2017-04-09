@@ -8,7 +8,8 @@
         "dflydev/doctrine-orm-service-provider": "^2.0",
         "doctrine/dbal": "^2.5",
         "doctrine/common": "^2.7",
-        "doctrine/orm": "^2.5"
+        "doctrine/orm": "^2.5",
+        "symfony/var-dumper": "^3.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.1"
